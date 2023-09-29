@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <!-- Iconos en font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Productos</title>
 </head>
 <body>
+    <!-- Configuración del navbar -->
+    <header>
+        <div class="header-left">
+          <div class="logo">
+            <img src="./logo.png" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html" class="active">Inicio</a>
+              </li>
+              <li>
+                <a href="productos.html">Productos</a>
+              </li>
+              <li>
+                <a href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+            <div class="perfil-carrito">
+              <a href="perfil.html"><i class="fa-solid fa-user"></i></a>
+              <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="perfil-carrito">
+            <a href="perfil.html"><i class="fa-solid fa-user"></i></a>
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+          nav.classList.toggle("active");
+        };
+    </script>
+    
+
 
 </body>
 </html>
